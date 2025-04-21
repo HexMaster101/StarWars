@@ -1,9 +1,13 @@
-import { Poppins } from "next/font/google";
+import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
 	variable: "--font-poppins",
 	weight: "400",
+});
+
+const playfairDisplay = Playfair_Display({
+	variable: "--font-playfair",
 });
 
 export const metadata = {
@@ -14,7 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${poppins.variable} antialiased bg-black`}>
+			<body
+				className={`${poppins.variable} ${playfairDisplay.variable} antialiased bg-black overflow-x-hidden`}
+			>
 				{children}
 			</body>
 		</html>

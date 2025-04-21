@@ -1,29 +1,33 @@
 function DeathStar() {
 	return (
 		<section
-			className="h-screen flex flex-row justify-between items-center"
+			className="bg-[#ebbe7e] relative"
 			style={{
-				padding: "0 150px",
-				marginTop: "240px",
+				padding: "30px 150px 60px",
 			}}
 		>
-			<div className="w-[600px]">
-				<h1 className="text-[#1f4863] text-5xl">THE DEATH STAR</h1>
-				<p
-					className="text-white  text-2xl"
-					style={{
-						marginTop: "30px",
-					}}
-				>
-					The Death Star is a massive, moon-sized space station and superweapon
-					created by the Galactic Empire. Armed with a planet-destroying laser,
-					it symbolizes imperial dominance. Designed for fear and control, it
-					houses vast military forces, TIE fighters, and personnel, making it
-					one of the most iconic threats in the Star Wars universe.
-				</p>
-				<p></p>
+			<div className="h-[150px] flex justify-center items-center">
+				<h1 className=" text-white text-[4.5rem] altFont font-thin text-center">
+					T A T O O I N E
+				</h1>
 			</div>
-			<img src="/svgs/death_star.svg" className="aspect-square h-[400px]" />
+
+			<div className="flex flex-row justify-between items-center h-[calc(100vh-150px)]">
+				<div className="w-[600px]">
+					<p className="text-black  text-[20px]">
+						Tatooine is a desert planet in the Star Wars universe, known for its
+						twin suns and harsh, arid climate. It is home to vast stretches of
+						sand dunes, rocky canyons, and sparse settlements.
+						<br />
+						<br />
+						The planet's surface is mostly barren, with little vegetation, and
+						it is inhabited by various species, including the native Jawas and
+						Tusken Raiders.
+					</p>
+					<p></p>
+				</div>
+				<img src="/svgs/death_star.svg" className="aspect-square h-[400px]" />
+			</div>
 		</section>
 	);
 }
